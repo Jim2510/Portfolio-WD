@@ -1,0 +1,125 @@
+.main-page {
+    width: 100%;
+    height: fit-content;
+    background: url(/assets/imgs/abstract.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        text-align: center;
+        font-size: 2.3em;
+        padding-top: 150px;
+        text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+        margin-bottom: 100px;
+    }
+
+    .pres {
+        width: 90%;
+        height: fit-content;
+        background-color: rgba(255, 255, 255, 0.534);
+        backdrop-filter: blur(8px);
+        color: black;
+        justify-self: center;
+        align-self: center;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .pres:hover {
+        -webkit-box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.69); 
+box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.69);
+    }
+
+    .container-cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.123);
+        backdrop-filter: blur(5px);
+        width: 90%;
+        height: fit-content;
+        border-radius: 10px;
+        justify-self: center;
+        align-self: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+
+        .card {
+            width: 75%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+
+            .photo {
+                width: 100%;
+                height: 200px;
+                // border: solid 1px black;
+                background-image: url(/assets/imgs/website_under_construction-620x224.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: #121212c9;
+                backdrop-filter: blur(8px);
+                border-radius: 10px 10px 0 0;
+            }
+
+            .descr {
+                width: 100%;
+                height: 150px;
+                // border: solid 1px black;
+                background-color: rgba(255, 255, 255, 0.589);
+                backdrop-filter: blur(8px);
+                border-radius: 0 0 10px 10px;
+            }
+
+        }
+
+        .card:hover {
+            box-shadow: inset 10px 15px 20px 25px rgba(41, 41, 41, 0.507);
+        }
+
+    }
+
+    
+}
+
+/* Query Desktop */
+@media (min-width: 700px) {
+
+    .main-page {
+        height: fit-content !important;
+    }
+
+    .container-cards {
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        margin-bottom: 50px !important;
+    }
+
+    .card {
+        width: 30% !important;
+    }
+
+    .main-title {
+        font-size: 8em !important;
+    }
+    
+    .pres {
+        padding: 10px
+    }
+}
