@@ -2,5 +2,81 @@
   background: url(/assets/imgs/920409.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.main-page .titleportfolio {
+  text-align: center;
+  font-size: 2.3em;
+  padding-top: 150px;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #be0aaf, 0 0 30px #be0aaf, 0 0 40px #be0aaf, 0 0 55px #be0aaf, 0 0 75px #be0aaf;
+}
+.main-page .dsc {
+  width: 55%;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-radius: 10px;
+  margin: 50px auto;
+}
+.main-page .dsc p {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+.main-page .mxcnt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  height: 500px;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  margin: 0 auto;
+}
+.main-page .mxcnt .fline {
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.main-page .mxcnt .fline .img1, .main-page .mxcnt .fline .img3 {
+  width: 100px;
+  height: 100px;
+}
+.main-page .mxcnt .fline .img4 {
+  width: 160px;
+  height: 100px;
+}
+.main-page .mxcnt .fline .img2 {
+  width: 80px;
+  height: 100px;
+}
+.main-page .mxcnt .sline {
+  background-color: white;
+  border-radius: 10px;
+  width: 60%;
+  height: 450px;
+}
+.main-page .mxcnt .sline .info {
+  width: 100%;
+  height: 25%;
+  border-bottom: solid 2px black;
+}
+.main-page .mxcnt .sline .info4 {
+  border: none;
+}
+
+@media (min-width: 700px) {
+  .titleportfolio {
+    font-size: 5em !important;
+  }
 }/*# sourceMappingURL=portfolio.css.map */

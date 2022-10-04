@@ -2,5 +2,94 @@
     background: url(/assets/imgs/920409.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
+    height: fit-content;
+
+    .titleportfolio {
+        text-align: center;
+        font-size: 2.3em;
+        padding-top: 150px;
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #be0aaf, 0 0 30px #be0aaf, 0 0 40px #be0aaf, 0 0 55px #be0aaf, 0 0 75px #be0aaf;
+        // text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+    }
+
+    .dsc {
+        width: 55%;
+        background-color: transparent;
+        backdrop-filter: blur(8px);
+        border-radius: 10px;
+        margin: 50px auto;
+
+        p {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+        }
+
+    }
+
+    .mxcnt {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 95%;
+        height: 500px;
+        background-color: transparent;
+        backdrop-filter: blur(8px);
+        margin: 0 auto;
+
+        .fline {
+            background-color: white;
+            border-radius: 10px;
+            width: 30%;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+
+            .img1, .img3 {
+                width: 100px;
+                height: 100px;
+            }
+
+            .img4 {
+                width: 160px;
+                height: 100px;
+            }
+
+            .img2 {
+                width: 80px;
+                height: 100px;
+            }
+
+        }
+
+        .sline {
+            background-color: white;
+            border-radius: 10px;
+            width: 60%;
+            height: 450px;
+
+            .info {
+                width: 100%;
+                height: 25%;
+                border-bottom: solid 2px black;
+            }
+
+            .info4 {
+                border: none;
+            }
+        }
+
+    }
+
+}
+
+@media (min-width: 700px) {
+    .titleportfolio {
+        font-size: 5em !important;
+    }
 }
